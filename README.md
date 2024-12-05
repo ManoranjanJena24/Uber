@@ -113,3 +113,56 @@ INSIDE Headers
 {
     "message": "Logged out"
 }
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+##### Captain authentication starts below
+
+
+
+## 2.0.1 POST : http://localhost:4000/captains/register
+
+## INPUT:
+{
+   "fullname":{
+        "firstname":"test3captain",
+        "lastname":"hero"
+    },
+    "email":"test3captain@gmail.com",
+    "password":"123456789",
+    "vehicle":{
+        "color":"red",
+        "plate":"MP 04 XY 6204",
+        "capacity":3,
+        "vehicleType":"car"
+    }
+}
+
+## OUTPUT:
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzUxNmU5MjA5MGIwNTM4OTBlZWYwZGUiLCJpYXQiOjE3MzMzODk5NzAsImV4cCI6MTczMzQ3NjM3MH0.IEypIlhKLnQklatBD9vhSQ9ycbNgc0z54I9WHDxmq_M",
+    "captain": {
+        "fullname": {
+            "firstname": "test3captain",
+            "lastname": "hero"
+        },
+        "email": "test3captain@gmail.com",
+        "password": "$2b$10$QZBx4/OWxhNvO/w0ljaF2uH0/7mxYmqy93XoodzSg.JOYNO1uxOUi",
+        "status": "inactive",
+        "vehicle": {
+            "color": "red",
+            "plate": "MP 04 XY 6204",
+            "capacity": 3,
+            "vehicleType": "car"
+        },
+        "_id": "67516e92090b053890eef0de",
+        "__v": 0
+    }
+}

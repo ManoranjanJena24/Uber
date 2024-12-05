@@ -166,3 +166,93 @@ INSIDE Headers
         "__v": 0
     }
 }
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 2.0.2 POST : http://localhost:4000/captains/login
+
+## INPUT:
+{
+    "email":"test3captain@gmail.com",
+    "password":"123456789"
+    
+}
+
+## OUTPUT:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzUxNmU5MjA5MGIwNTM4OTBlZWYwZGUiLCJpYXQiOjE3MzMzOTg4NTEsImV4cCI6MTczMzQ4NTI1MX0.ocKC9YRcaWoumbIALG7ZHcTxn4bpT9XluJMVLzkAlyg",
+    "captain": {
+        "fullname": {
+            "firstname": "test3captain",
+            "lastname": "hero"
+        },
+        "vehicle": {
+            "color": "red",
+            "plate": "MP 04 XY 6204",
+            "capacity": 3,
+            "vehicleType": "car"
+        },
+        "_id": "67516e92090b053890eef0de",
+        "email": "test3captain@gmail.com",
+        "password": "$2b$10$QZBx4/OWxhNvO/w0ljaF2uH0/7mxYmqy93XoodzSg.JOYNO1uxOUi",
+        "status": "inactive",
+        "__v": 0
+    }
+}
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+## 2.0.3 GET : http://localhost:4000/captains/profile
+
+## INPUT:
+
+
+## OUTPUT:
+
+{
+    "captain": {
+        "fullname": {
+            "firstname": "test3captain",
+            "lastname": "hero"
+        },
+        "vehicle": {
+            "color": "red",
+            "plate": "MP 04 XY 6204",
+            "capacity": 3,
+            "vehicleType": "car"
+        },
+        "_id": "67516e92090b053890eef0de",
+        "email": "test3captain@gmail.com",
+        "status": "inactive",
+        "__v": 0
+    }
+}
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+## 2.0.4 GET : http://localhost:4000/captains/logout
+
+## INPUT:
+
+
+## OUTPUT:
+
+{
+    "message": "Logged out"
+}
+

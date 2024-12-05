@@ -60,3 +60,42 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+## 2 GET : http://localhost:4000/users/profile
+## 2.1) INPUT:
+INSIDE Headers
+->Keep Key as Authorization
+->Keep Value as bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzUwNWI1YjFiMDYxMzNiNDQ0MjM4MjkiLCJpYXQiOjE3MzMzNDIzMTV9.fS6AI__Pc6rCB5zzS8TRVf1pPl1L4_yBDGjVJf1GqVY
+
+
+## OUTPUT:
+
+{
+    "fullname": {
+        "firstname": "Yuvraj",
+        "lastname": "Singh"
+    },
+    "_id": "67505b5b1b06133b44423829",
+    "email": "yuvraj@gmail.com",
+    "__v": 0
+}
+
+
+
+
+## 2.2) INPUT:
+INSIDE Headers
+->Keep Key as Authorization
+->Keep Value as bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzUwNWI1YjFiMDYxMzNiNDQ0MjM4MjkiLCJpYXQiOjE3MzMzNDIzMTV9.fS6AI__Pc6rCB5zzS8TRVf1pPl1L4_yBDGjVJf1GqVY
+
+
+## OUTPUT:
+
+{
+    "fullname": {
+        "firstname": "Yuvraj",
+        "lastname": "Singh"
+    },
+    "_id": "67505b5b1b06133b44423829",
+    "email": "yuvraj@gmail.com",
+    "__v": 0
+}

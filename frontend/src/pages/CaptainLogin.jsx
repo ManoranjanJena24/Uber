@@ -24,7 +24,7 @@ const CaptainLogin = () => {
     return (
         <div className='p-7 h-screen flex flex-col justify-between'>
             <div>
-                <img className='w-16 mb-10' src="https://th.bing.com/th/id/R.eadac11b662faa57e4b806263f8e7642?rik=dXbhLg7x49QVbg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuber-logo-vector-png-uber-icon-png-50-px-1600.png&ehk=hWY6TYYwZAYpPbHKLid%2f431JJx%2frKI7tiY%2b6i993Y1A%3d&risl=&pid=ImgRaw&r=0" alt="" />
+                <img className='w-16 mb-10' src="https://pngimg.com/d/uber_PNG24.png" alt="" />
 
                 <form onSubmit={(e) => {
                     submitHandler(e)

@@ -15,3 +15,10 @@ npm run dev
 
 
 npm i react-router-dom
+
+
+
+import {useGSAP} from '@gsap/react'
+import gsap from 'gsap
+npm install remixicon --save
+import 'remixicon/fonts/remixicon.css'

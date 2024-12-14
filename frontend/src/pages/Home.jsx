@@ -6,6 +6,7 @@ import LocationSearchPanel from '../components/LocationSearchPanel'
 import VehiclePanel from '../components/VehiclePanel'
 import ConfirmRide from '../components/ConfirmRide'
 import LookingForDriver from '../components/LookingForDriver'
+import WaitingForDriver from '../components/WaitingForDriver'
 
 
 const Home = () => {
@@ -15,11 +16,18 @@ const Home = () => {
   const vehiclePanelRef=useRef(null)
   const confirmRidePanelRef=useRef(null)
   const vehicleFoundRef=useRef(null)
+  const waitingForDriverRef=useRef(null)
+
+
+
   const panelRef=useRef(null)
   const panelCloseRef =useRef(null)
   const [vehiclePanel, setVehiclePanel] = useState(false)
   const [confirmRidePanel, setConfirmRidePanel] = useState(false)
+
   const [vehicleFound, setVehicleFound] = useState(false)
+  const [waitingForDriver, setWaitingForDriver] = useState(false)
+ 
 
   const submitHandler = (e) => {
     e.preventDefault()
@@ -91,6 +99,22 @@ const Home = () => {
   },[vehicleFound])
 
 
+
+  
+  useGSAP(function(){
+    if(waitingForDriver){
+      gsap.to(waitingForDriverRef.current,{
+        transform:'translateY(0)'
+      })
+    }
+    else{
+      gsap.to(waitingForDriverRef.current,{
+        transform:'translateY(100%)'
+      })
+    }
+  },[waitingForDriver])
+
+
   return (
     <div className='h-screen relative overflow-hidden'>
       <img className='w-16 absolute left-5 top-5' src="https://th.bing.com/th/id/R.eadac11b662faa57e4b806263f8e7642?rik=dXbhLg7x49QVbg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuber-logo-vector-png-uber-icon-png-50-px-1600.png&ehk=hWY6TYYwZAYpPbHKLid%2f431JJx%2frKI7tiY%2b6i993Y1A%3d&risl=&pid=ImgRaw&r=0" alt="" />
@@ -150,7 +174,12 @@ const Home = () => {
             </div>
 
             <div ref={vehicleFoundRef} className='fixed w-full z-10 translate-y-full bg-white bottom-0 px-3 py-6 pt-12'>
-              <LookingForDriver/>
+              <LookingForDriver setVehicleFound={setVehicleFound}/>
+           </div>
+
+
+           <div ref={waitingForDriverRef} className='fixed w-full z-10  bg-white bottom-0 px-3 py-6 pt-12'>
+              <WaitingForDriver waitingForDriver={waitingForDriver} />
            </div>
 
             

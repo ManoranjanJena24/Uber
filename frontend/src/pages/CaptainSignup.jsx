@@ -173,7 +173,7 @@ const CaptainSignup = () => {
             </div>
 
             <div>
-                <p className='text-[10px] leading-tight'>By procedding, you consent to get calss,<span className='underline '>WhatsApp or SMS message</span> , including by automated means,from Uber and its <span>affilates to the number provided</span> .</p>
+                <p className='text-[10px] mt-6 leading-tight'>By procedding, you consent to get calss,<span className='underline '>WhatsApp or SMS message</span> , including by automated means,from Uber and its <span>affilates to the number provided</span> .</p>
             </div>
 
         </div>
